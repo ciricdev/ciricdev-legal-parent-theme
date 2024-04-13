@@ -1,0 +1,15 @@
+{
+  "name": "acf/polygon-map",
+  "title": "Polygon Map",
+  "description": "Creates a map with a polygon overlay (i.e. for use showing an area served)",
+  "category": "mp-parent",
+  "icon": "admin-site",
+  "keywords": ["locations", "map", "core", "parent"],
+  "acf": {
+    "mode": "preview",
+    "renderTemplate": "polygon-map.php"
+  },
+  "supports": {
+    "anchor": true
+  }
+}

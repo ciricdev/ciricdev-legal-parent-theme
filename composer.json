@@ -1,0 +1,14 @@
+{
+    "name": "ciricdev/legal-parent-theme",
+    "description": "A WP theme built by the CiricDev Digital Agency",
+    "type": "wordpress-theme",
+    "authors": [
+        {
+            "name": "Aleksandar Ciric",
+            "email": "aleksandar@ciric.dev"
+        }
+    ],
+    "require": {
+        "composer/installers": "~1.0"
+    }
+}

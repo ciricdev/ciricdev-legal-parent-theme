@@ -1,0 +1,100 @@
+{
+  "key": "group_630e50ef6dda6",
+  "title": "Citations Table Block Fields",
+  "fields": [
+    {
+      "key": "field_630e510280879",
+      "label": "Title",
+      "name": "title",
+      "type": "text",
+      "instructions": "",
+      "required": 0,
+      "conditional_logic": 0,
+      "wrapper": {
+        "width": "",
+        "class": "",
+        "id": ""
+      },
+      "default_value": "Article Sources",
+      "placeholder": "",
+      "prepend": "",
+      "append": "",
+      "maxlength": ""
+    },
+    {
+      "key": "field_630e526557b1e",
+      "label": "Citations",
+      "name": "citations",
+      "type": "repeater",
+      "instructions": "",
+      "required": 0,
+      "conditional_logic": 0,
+      "wrapper": {
+        "width": "",
+        "class": "",
+        "id": ""
+      },
+      "collapsed": "",
+      "min": 0,
+      "max": 0,
+      "layout": "table",
+      "button_label": "",
+      "sub_fields": [
+        {
+          "key": "field_630e515f8087a",
+          "label": "Content",
+          "name": "content",
+          "type": "textarea",
+          "instructions": "The textual portion of the citation (NOT the link)",
+          "required": 0,
+          "conditional_logic": 0,
+          "wrapper": {
+            "width": "",
+            "class": "",
+            "id": ""
+          },
+          "default_value": "",
+          "placeholder": "Feinman, Y. (2018, July 27). Alternative to proctoring in introductory statistics community college courses [Poster presentation]. Walden University Research Symposium, Minneapolis, MN, United States.",
+          "maxlength": 300,
+          "rows": 3,
+          "new_lines": ""
+        },
+        {
+          "key": "field_630e51968087b",
+          "label": "External Link",
+          "name": "external_link",
+          "type": "url",
+          "instructions": "",
+          "required": 0,
+          "conditional_logic": 0,
+          "wrapper": {
+            "width": "",
+            "class": "",
+            "id": ""
+          },
+          "default_value": "",
+          "placeholder": ""
+        }
+      ]
+    }
+  ],
+  "location": [
+    [
+      {
+        "param": "block",
+        "operator": "==",
+        "value": "acf/citations-table"
+      }
+    ]
+  ],
+  "menu_order": 0,
+  "position": "normal",
+  "style": "default",
+  "label_placement": "top",
+  "instruction_placement": "label",
+  "hide_on_screen": "",
+  "active": true,
+  "description": "",
+  "show_in_rest": 0,
+  "modified": 1661884011
+}

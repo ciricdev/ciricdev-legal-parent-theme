@@ -1,0 +1,36 @@
+.pl-form {
+  .gfield {
+    /* Hide Labels */
+    .gfield_label {
+      @apply hidden;
+    }
+
+    /* Default Styling */
+    input, select {
+      @apply py-4 px-6 bg-transparent border text-white rounded-full font-normal w-full;
+
+      &::placeholder {
+        @apply text-white font-normal;
+      }
+    }
+  }
+
+  .gform_button {
+    @apply rounded-full min-w-[15rem] py-3 px-8 text-xl transition-colors duration-500 cursor-pointer relative;
+  }
+
+  /* Specific Variations */
+  &--horizontal {
+    .gform_fields {
+      @apply grid grid-cols-2 gap-4;
+
+      .gfield:last-child {
+        @apply col-span-2;
+      }
+    }
+
+    .gform_footer {
+      @apply pt-16 text-center;
+    }
+  }
+}

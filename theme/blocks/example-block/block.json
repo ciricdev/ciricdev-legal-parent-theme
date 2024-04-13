@@ -1,0 +1,22 @@
+{
+  "name": "acf/example-block",
+  "title": "Example Block",
+  "description": "An example scaffold block",
+  "category": "child-theme-blocks",
+  "icon": "admin-home",
+  "keywords": ["hero"],
+  "acf": {
+    "mode": "preview",
+    "renderTemplate": "example-block.php"
+  },
+  "example": {
+    "attributes": {
+      "data": {
+        "is_preview": true
+      }
+    }
+  },
+  "supports": {
+    "anchor": true
+  }
+}

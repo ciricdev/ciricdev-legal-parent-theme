@@ -1,0 +1,16 @@
+{
+  "name": "acf/citations-table",
+  "title": "Citations Table",
+  "description": "'Creates a block showing a list of sources/citations for the current page'",
+  "style": "blocks/citations-table-style",
+  "category": "mp-parent",
+  "icon": "welcome-learn-more",
+  "keywords": ["citations", "shared"],
+  "acf": {
+    "mode": "preview",
+    "renderTemplate": "citations-table.php"
+  },
+  "supports": {
+    "anchor": true
+  }
+}

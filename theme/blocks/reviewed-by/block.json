@@ -1,0 +1,16 @@
+{
+  "name": "acf/reviewed-by",
+  "title": "Reviewed By",
+  "description": "Creates a block showing a 'reviewed by' link to a profile that reviewed the page",
+  "style": "blocks/reviewed-by-style",
+  "category": "mp-parent",
+  "icon": "editor-spellcheck",
+  "keywords": ["generic", "content", "review"],
+  "acf": {
+    "mode": "preview",
+    "renderTemplate": "reviewed-by.php"
+  },
+  "supports": {
+    "anchor": true
+  }
+}

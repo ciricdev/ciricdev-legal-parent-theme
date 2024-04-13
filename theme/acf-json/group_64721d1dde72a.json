@@ -1,0 +1,164 @@
+{
+    "key": "group_64721d1dde72a",
+    "title": "Local Content Fields",
+    "fields": [
+        {
+            "key": "field_64721e3153f8c",
+            "label": "Basic Information",
+            "name": "",
+            "type": "tab",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "placement": "top",
+            "endpoint": 0
+        },
+        {
+            "key": "field_64721d2953f8a",
+            "label": "Geopoint",
+            "name": "geopoint",
+            "type": "google_map",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "center_lat": "",
+            "center_lng": "",
+            "zoom": "",
+            "height": ""
+        },
+        {
+            "key": "field_64721dc253f8b",
+            "label": "Content Type",
+            "name": "content_type",
+            "type": "select",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "choices": {
+                "Area Served": "Area Served",
+                "Local Practice Area": "Local Practice Area",
+                "Other": "Other"
+            },
+            "default_value": "Area Served",
+            "allow_null": 0,
+            "multiple": 0,
+            "ui": 0,
+            "return_format": "value",
+            "ajax": 0,
+            "placeholder": ""
+        },
+        {
+            "key": "field_64721e4d53f8d",
+            "label": "Area Type",
+            "name": "area_type",
+            "type": "select",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_64721dc253f8b",
+                        "operator": "==",
+                        "value": "Area Served"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "choices": {
+                "State": "State",
+                "City": "City"
+            },
+            "default_value": false,
+            "allow_null": 0,
+            "multiple": 0,
+            "ui": 0,
+            "return_format": "value",
+            "ajax": 0,
+            "placeholder": ""
+        },
+        {
+            "key": "field_6472207553f8f",
+            "label": "Relationships",
+            "name": "",
+            "type": "tab",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "placement": "top",
+            "endpoint": 0
+        },
+        {
+            "key": "field_647220bc53f90",
+            "label": "Global Practice Area",
+            "name": "global_practice_area",
+            "type": "post_object",
+            "instructions": "Link to a global practice area with non-local specific information. E.g. \"Brooklyn Car Accident Lawyer\" local content might have a link to the \"Car Accident Lawyer\" global practice area",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_64721dc253f8b",
+                        "operator": "==",
+                        "value": "Local Practice Area"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "post_type": [
+                "practice-area"
+            ],
+            "taxonomy": "",
+            "allow_null": 0,
+            "multiple": 0,
+            "return_format": "object",
+            "ui": 1
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "post_type",
+                "operator": "==",
+                "value": "local"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "acf_after_title",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": true,
+    "description": "",
+    "show_in_rest": 0,
+    "modified": 1685201188
+}

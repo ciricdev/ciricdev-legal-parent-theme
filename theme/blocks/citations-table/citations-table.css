@@ -1,0 +1,17 @@
+.mp-citations-table {
+  padding: 2rem;
+
+  &__citations {
+    list-style-type: decimal;
+    padding-top: 3rem;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5rem;
+  }
+
+  @media screen and (max-width: 768px) {
+    &__citations {
+      grid-template-columns: 1fr;
+    }
+  }
+}

@@ -1,0 +1,108 @@
+{
+    "key": "group_64d3e272e8551",
+    "title": "Polygon Map Fields",
+    "fields": [
+        {
+            "key": "field_64d3e27d94528",
+            "label": "Place ID",
+            "name": "place_id",
+            "type": "text",
+            "instructions": "You can find the place ID here https:\/\/developers.google.com\/maps\/documentation\/places\/web-service\/place-id",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "maxlength": ""
+        },
+        {
+            "key": "field_64d3e3ae94529",
+            "label": "Map ID Override",
+            "name": "map_id_override",
+            "type": "text",
+            "instructions": "By default, the map ID in global settings will be used",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "maxlength": ""
+        },
+        {
+            "key": "field_64d3e4159452a",
+            "label": "Feature Layer Category",
+            "name": "feature_layer_category",
+            "type": "select",
+            "instructions": "Technical, don't change unless you know what you're doing :)",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "choices": {
+                "LOCALITY": "LOCALITY",
+                "POSTAL_CODE": "POSTAL_CODE",
+                "ADMINISTRATIVE_AREA_LEVEL_1": "ADMINISTRATIVE_AREA_LEVEL_1",
+                "ADMINISTRATIVE_AREA_LEVEL_2": "ADMINISTRATIVE_AREA_LEVEL_2"
+            },
+            "default_value": "LOCALITY",
+            "allow_null": 0,
+            "multiple": 0,
+            "ui": 0,
+            "return_format": "value",
+            "ajax": 0,
+            "placeholder": ""
+        },
+        {
+            "key": "field_64d3e4e89452b",
+            "label": "Location",
+            "name": "location",
+            "type": "google_map",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "center_lat": "",
+            "center_lng": "",
+            "zoom": "",
+            "height": ""
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "block",
+                "operator": "==",
+                "value": "acf\/polygon-map"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": true,
+    "description": "",
+    "show_in_rest": 0,
+    "modified": 1691608326
+}

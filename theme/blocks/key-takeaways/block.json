@@ -1,0 +1,16 @@
+{
+  "name": "acf/key-takeaways",
+  "title": "Key Takeaways",
+  "description": "Creates a block containing key points from the article, usually placed at the top of the contnet",
+  "style": "blocks/key-takeaways-style",
+  "category": "mp-parent",
+  "icon": "excerpt-view",
+  "keywords": ["generic", "content", "summary"],
+  "acf": {
+    "mode": "preview",
+    "renderTemplate": "key-takeaways.php"
+  },
+  "supports": {
+    "anchor": true
+  }
+}

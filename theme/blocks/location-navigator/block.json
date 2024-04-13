@@ -1,0 +1,15 @@
+{
+  "name": "acf/location-navigator",
+  "title": "Location Navigator",
+  "description": "Creates a browsable interface for exploring service areas and offices",
+  "category": "mp-parent",
+  "icon": "admin-site-alt3",
+  "keywords": ["locations", "areas-served", "core"],
+  "acf": {
+    "mode": "preview",
+    "renderTemplate": "location-navigator.php"
+  },
+  "supports": {
+    "anchor": true
+  }
+}

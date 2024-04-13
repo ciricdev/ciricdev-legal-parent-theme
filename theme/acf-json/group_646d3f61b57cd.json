@@ -1,0 +1,47 @@
+{
+    "key": "group_646d3f61b57cd",
+    "title": "User Fields",
+    "fields": [
+        {
+            "key": "field_646d3f6624810",
+            "label": "Team Profile",
+            "name": "team_profile",
+            "type": "post_object",
+            "instructions": "A linkage to a profile page for an author (if it makes sense)",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "post_type": [
+                "team"
+            ],
+            "taxonomy": "",
+            "allow_null": 0,
+            "multiple": 0,
+            "return_format": "object",
+            "ui": 1
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "user_form",
+                "operator": "==",
+                "value": "all"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": true,
+    "description": "",
+    "show_in_rest": 0,
+    "modified": 1684881296
+}
