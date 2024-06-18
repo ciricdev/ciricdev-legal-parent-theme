@@ -4,7 +4,7 @@
  *
  * @link https://codex.wordpress.org/Creating_an_Error_404_Page
  *
- * @package pond-lehocky-theme-v2
+ * @package ciricdev-legal-parent
  */
 
 get_header();

@@ -1,8 +1,8 @@
 <?php
 
 #-- Default Hooks
-add_action( 'block_categories', 'pl_block_categories', 10, 2 );
-function pl_block_categories( $categories ) {
+add_action( 'block_categories', 'cd_block_categories', 10, 2 );
+function cd_block_categories( $categories ) {
     return array_merge(
         $categories,
         [
@@ -76,7 +76,7 @@ function mp_output_additional_schema_for_post() {
 }
 add_action('wp_footer', 'mp_output_additional_schema_for_post');
 
-# MeanPug Content Widgets
+# CIRICDEV Content Widgets
 add_action('mpdcontent/ask-question/submission', function($data) {
     GFAPI::add_entry(array(
         '1' => $data['question'],

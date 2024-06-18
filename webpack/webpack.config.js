@@ -35,7 +35,6 @@ const base = {
     ],
     externals: {
         jquery: 'jQuery',
-        '@meanpug-llc/wp-core': 'MeanPug'
     },
     module: {
         rules: [

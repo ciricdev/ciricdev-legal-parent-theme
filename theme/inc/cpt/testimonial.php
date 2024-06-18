@@ -1,6 +1,6 @@
 <?php
 
-function pl_register_testimonials()
+function cd_register_testimonials()
 {
     $singular = 'Testimonial';
     $plural = 'Testimonials';
@@ -43,4 +43,4 @@ function pl_register_testimonials()
     register_post_type($slug, $args);
 }
 
-add_action('init', 'pl_register_testimonials');
+add_action('init', 'cd_register_testimonials');

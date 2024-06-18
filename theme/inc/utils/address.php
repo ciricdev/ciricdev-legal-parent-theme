@@ -1,6 +1,6 @@
 <?php
 
-function pl_format_address( $postal_code, $state, $city, $address1, $address2 = null ) {
+function cd_format_address( $postal_code, $state, $city, $address1, $address2 = null ) {
     $formatted = $address1;
     if ($address2) {
         $formatted .= ', ' . $address2;

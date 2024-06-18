@@ -5,9 +5,8 @@ import './js/components/marquee';
 import './js/components/carousel';
 import './js/components/modal';
 import './js/components/plugins/toc';
-import './js/components/shared/tabs';
-import './js/components/shared/attribution';
-import './js/widgets/shared/location-navigator';
+// import './js/components/shared/tabs';
+// import './js/widgets/shared/location-navigator';
 /** Optional Imports Depending on Requirements
  * import './components/optional/accordion.js';
  * import './components/optional/tabs.js';

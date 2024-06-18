@@ -4,7 +4,7 @@
  *
  * @link https://developer.wordpress.org/themes/basics/template-hierarchy/
  *
- * @package pond-lehocky-theme-v2
+ * @package ciricdev-legal-parent
  */
 
 ?>

@@ -3,9 +3,9 @@
  * Generate a unique ID for each form and a string containing an aria-label
  * if one was passed to get_search_form() in the args array.
  */
-$pl_unique_id = wp_unique_id( 'search-form-' );
+$cd_unique_id = wp_unique_id( 'search-form-' );
 
-$pl_aria_label = ! empty( $args['aria_label'] ) ? 'aria-label="' . esc_attr( $args['aria_label'] ) . '"' : '';
+$cd_aria_label = ! empty( $args['aria_label'] ) ? 'aria-label="' . esc_attr( $args['aria_label'] ) . '"' : '';
 ?>
 <div class="modal modal--search micromodal-slide group" id="search-modal" aria-hidden="true">
     <div class="modal__overlay z-50" tabindex="-1" data-micromodal-close>
@@ -20,7 +20,7 @@ $pl_aria_label = ! empty( $args['aria_label'] ) ? 'aria-label="' . esc_attr( $ar
                         <label class="text-white" for="<?php echo esc_attr( $ps_unique_id ); ?>"><?php _e( 'Search', 'pl' ); ?></label>
 
                         <div class="flex pt-16 md:pt-32">
-                            <input type="search" id="<?php echo esc_attr( $pl_unique_id ); ?>" placeholder="<?php _e('Start typing', 'pl') ?>" class="py-4 px-6 rounded-none flex-grow bg-transparent border-b-2 border-white font-sans text-base text-white" value="<?php echo get_search_query(); ?>" name="s" />
+                            <input type="search" id="<?php echo esc_attr( $cd_unique_id ); ?>" placeholder="<?php _e('Start typing', 'pl') ?>" class="py-4 px-6 rounded-none flex-grow bg-transparent border-b-2 border-white font-sans text-base text-white" value="<?php echo get_search_query(); ?>" name="s" />
                             <button type="submit" class="w-32 md:w-48 cursor-pointer bg-white text-green py-4 px-12"><?php echo esc_attr_x( 'Go', 'submit button', 'pl' ); ?></button>
                         </div>
                     </form>

@@ -6,5 +6,5 @@
  * common module, simply changing which parameters are fed into the module to control it
 **/
 require_once __DIR__ . '/base.php';
-require_once __DIR__ . '/location-navigator/location-navigator.php';
-require_once __DIR__ . '/polygon-map/polygon-map.php';
+// require_once __DIR__ . '/location-navigator/location-navigator.php';
+// require_once __DIR__ . '/polygon-map/polygon-map.php';

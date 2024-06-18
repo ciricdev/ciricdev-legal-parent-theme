@@ -1,6 +1,6 @@
 <?php
 
-function pl_register_practice_areas()
+function cd_register_practice_areas()
 {
     $singular = 'Practice Area';
     $plural = 'Practice Areas';
@@ -47,4 +47,4 @@ function pl_register_practice_areas()
     register_post_type($slug, $args);
 }
 
-add_action('init', 'pl_register_practice_areas');
+add_action('init', 'cd_register_practice_areas');

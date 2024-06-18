@@ -1,6 +1,6 @@
 <?php
 
-function pl_register_team()
+function cd_register_team()
 {
     $singular = 'Team';
     $plural = 'Team';
@@ -44,4 +44,4 @@ function pl_register_team()
 
 }
 
-add_action('init', 'pl_register_team');
+add_action('init', 'cd_register_team');

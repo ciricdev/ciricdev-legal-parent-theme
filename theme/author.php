@@ -4,7 +4,7 @@
  *
  * @link https://developer.wordpress.org/themes/basics/template-hierarchy/
  *
- * @package pond-lehocky-theme-v2
+ * @package ciricdev-legal-parent
  */
 
 get_header();
@@ -23,7 +23,7 @@ get_header();
                             'size' => 150
                     );
                     ?>
-                    <img class="rounded-circle" src="<?php echo meanpug_avatar( $avatar_args ) ?>" alt="<?php the_author_meta( 'display_name' ) ?>" />
+                    <img class="rounded-circle" src="<?php echo cd_avatar( $avatar_args ) ?>" alt="<?php the_author_meta( 'display_name' ) ?>" />
                 </div>
 
                 <div class="col-12 col-md-8 pt-4 pt-md-0 text-center text-md-left">
@@ -51,7 +51,7 @@ get_header();
             endwhile;
         ?>
             <div class="container py-4">
-                <?php pl_load_more_button(); ?>
+                <?php cd_load_more_button(); ?>
             </div>
         <?php
         } else {

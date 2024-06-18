@@ -18,8 +18,8 @@ add_filter('acf/settings/load_json', function($paths) {
 });
 
 # GForms
-add_filter( 'gform_notification', 'pl_filter_form_notifications', 10, 3 );
-function pl_filter_form_notifications( $notification, $form, $entry ) {
+add_filter( 'gform_notification', 'cd_filter_form_notifications', 10, 3 );
+function cd_filter_form_notifications( $notification, $form, $entry ) {
     //There is no concept of admin notifications anymore, so we will need to target notifications based on other criteria, such as name
     if ( $notification['name'] == 'Admin Notification' ) {
         // toType can be routing or email
@@ -31,9 +31,9 @@ function pl_filter_form_notifications( $notification, $form, $entry ) {
     return $notification;
 }
 
-add_filter( 'gform_next_button', 'pl_input_to_button', 10, 2 );
-add_filter( 'gform_previous_button', 'pl_input_to_button', 10, 2 );
-add_filter( 'gform_submit_button', 'pl_input_to_button', 10, 2 );
+add_filter( 'gform_next_button', 'cd_input_to_button', 10, 2 );
+add_filter( 'gform_previous_button', 'cd_input_to_button', 10, 2 );
+add_filter( 'gform_submit_button', 'cd_input_to_button', 10, 2 );
 function ps_input_to_button( $button, $form ) {
     $dom = new DOMDocument();
     $dom->loadHTML( '<?xml encoding="utf-8" ?>' . $button );
@@ -50,16 +50,16 @@ function ps_input_to_button( $button, $form ) {
 }
 
 # Menus
-add_filter('nav_menu_link_attributes', 'pl_filter_menu_link_attributes', 10, 4);
-function pl_filter_menu_link_attributes( $atts, $menu_item, $args, $depth ) {
+add_filter('nav_menu_link_attributes', 'cd_filter_menu_link_attributes', 10, 4);
+function cd_filter_menu_link_attributes( $atts, $menu_item, $args, $depth ) {
     $thumbnail_url = get_the_post_thumbnail_url($menu_item->object_id);
     $atts['data-image'] = $thumbnail_url;
     return $atts;
 }
 
 # WP Core
-add_action( 'pre_get_posts', 'pl_filter_posts_query', 1);
-function pl_filter_posts_query($query) {
+add_action( 'pre_get_posts', 'cd_filter_posts_query', 1);
+function cd_filter_posts_query($query) {
     if (is_admin() || !$query->is_main_query()) {
         return;
     }
@@ -70,8 +70,8 @@ function pl_filter_posts_query($query) {
 }
 
 # LuckyWP ToC
-add_filter('lwptoc_enqueue_style', 'pl_disable_luckywp_styles');
-function pl_disable_luckywp_styles() {
+add_filter('lwptoc_enqueue_style', 'cd_disable_luckywp_styles');
+function cd_disable_luckywp_styles() {
     return false;
 }
 

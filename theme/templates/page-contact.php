@@ -11,7 +11,7 @@
  *
  * @link https://developer.wordpress.org/themes/basics/template-hierarchy/
  *
- * @package meanpug-legal-pi-parent-theme
+ * @package ciricdev-legal-parent
  */
 
 get_header();

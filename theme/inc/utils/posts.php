@@ -5,11 +5,10 @@
  * @param $post_type
  * @return mixed|string
  */
-function pl_canonical_post_type_name($post_type) {
+function cd_canonical_post_type_name($post_type) {
     $canonical_map = array(
-        'practice-area' => 'Practice Area',
         'post' => 'Blog Post',
-        'team' => 'Attorney',
+        'team' => 'Team',
     );
 
     return $canonical_map[$post_type] ?: $post_type;

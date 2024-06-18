@@ -1,6 +1,6 @@
 <?php
 
-function pl_register_single_faq_sidebar()
+function cd_register_single_faq_sidebar()
 {
     register_sidebar(array(
         'name' => 'Default Sidebar',
@@ -13,4 +13,4 @@ function pl_register_single_faq_sidebar()
     ));
 }
 
-add_action('init', 'pl_register_single_faq_sidebar');
+add_action('init', 'cd_register_single_faq_sidebar');

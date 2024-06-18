@@ -1,13 +1,13 @@
 <?php
 
-function pl_add_reviews_schema_for_post( $content ) {
+function cd_add_reviews_schema_for_post( $content ) {
     if ( is_singular( array( 'practice-area' ) ) ) {
         $testimonials = get_field( 'testimonials' );
 
         if ( $testimonials ) {
             $review_schema_array = array();
             foreach ( $testimonials as $testimonial ) {
-                $review_schema = pl_review_schema_for_testimonial( $testimonial );
+                $review_schema = cd_review_schema_for_testimonial( $testimonial );
                 array_push( $review_schema_array, $review_schema );
             }
 
@@ -24,4 +24,4 @@ function pl_add_reviews_schema_for_post( $content ) {
     return $content;
 }
 
-add_filter( 'the_content', 'pl_add_reviews_schema_for_post' );
+add_filter( 'the_content', 'cd_add_reviews_schema_for_post' );

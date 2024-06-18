@@ -9,8 +9,8 @@
 ## [Installation and Configuration](#installation-and-configuration)
 
 * Search/Ask for a `<NPM_TOKEN>` and `<COMPOSER_TOKEN>` which should be provided for each project individually
-* Create a `.npmrc.dev` file at the root of the project and populate it 
-```sh 
+* Create a `.npmrc.dev` file at the root of the project and populate it
+```sh
     //registry.npmjs.org/:_authToken=<NPM_TOKEN>
 ```
 * Run the following command to build images:
@@ -39,11 +39,11 @@ JS libraries that ship, as well as general information on our guidelines for Wor
 
 
 ## [Compiling Static Assets](#compiling-assets)
-All our assets (js/css) are compiled inside a docker static container, so when you run `docker-compose up -d`, 
+All our assets (js/css) are compiled inside a docker static container, so when you run `docker-compose up -d`,
 all the changes you make are immediately compiled. Please check webpack configuration for entry points.
 
 ## [Core Plugins](#core-plugins)
-Until we move to a more mature package dependency manager for the development pipeline (like composer), this section will 
+Until we move to a more mature package dependency manager for the development pipeline (like composer), this section will
 serve as a guide of the plugins we use for common tasks in development/prod.
 
 * Menus - [Max Mega Menu](https://wordpress.org/plugins/megamenu/)

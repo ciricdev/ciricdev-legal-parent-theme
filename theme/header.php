@@ -6,7 +6,7 @@
  *
  * @link https://developer.wordpress.org/themes/basics/template-files/#template-partials
  *
- * @package pond-lehocky-theme-v2
+ * @package ciricdev-legal-parent
  */
 
 ?>
